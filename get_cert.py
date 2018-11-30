@@ -2,7 +2,7 @@
 # Author:xuyang.li
 # Date:2018/11/24
 """
-    生成私钥，并将获取证书
+   Get Root CA, generate key and apply a certificate 
 """
 import ConfigParser
 
@@ -73,7 +73,6 @@ def get_private_key(public_key, password):
 
 if __name__ == '__main__':
     print "start create key and certificate "
-    # 下载 根证书
 
     cf = ConfigParser.ConfigParser()
     cf.read("get_cert.ini")
