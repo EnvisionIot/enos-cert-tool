@@ -1,8 +1,5 @@
-# coding: utf8
-# Author:xuyang.li
-# Date:2018/11/24
 """
-   Get Root CA, generate key and apply a certificate 
+    Get Root CA, generate key and apply a certificate
 """
 import ConfigParser
 
@@ -99,8 +96,8 @@ if __name__ == '__main__':
                                                  csr=csr)
 
     client = EnOSDefaultClient(cf.get("required", "api_url"),
-                               cf.get("required", "app_key"),
-                               cf.get("required", "app_secret"))
+                               cf.get("required", "access_key"),
+                               cf.get("required", "secret_key"))
 
     response = client.execute(request)
 
