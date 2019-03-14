@@ -1,0 +1,3 @@
+configparser==3.7.3
+pyOpenSSL==18.0.0
+enos-api-sdk-python>=0.0.3

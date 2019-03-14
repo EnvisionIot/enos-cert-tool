@@ -8,12 +8,12 @@ This repo contains the Python script that helps you get the EnOS CA root certifi
 
 <a name="python"></a>
 ## Install Dependencies
-To use the Python script, you will need Python 2.7.10+, and `pip` is required.
+To use the Python script, you will need Python 2.7.10+ or 3.5.3+, and `pip` is required.
 
-This tool depends on `enos-api-sdk-python`, you can use pip to install the dependency with the following command:
+This tool depends on `enos-api-sdk-python`,`configparser` and `pyOpenSSL`, you can use pip to install the dependency with the following command after entering the project folder:
 
 ```bash
-pip install enos-api-sdk-python
+pip install -r requirements.txt
 ```
 
 <a name="configuration"></a>
